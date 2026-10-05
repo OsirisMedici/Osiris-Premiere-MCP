@@ -6,7 +6,7 @@ const root = join(fileURLToPath(new URL("..", import.meta.url)));
 const readJson = (relativePath) => JSON.parse(readFileSync(join(root, relativePath), "utf8"));
 const packageJson = readJson("package.json");
 const manifest = readJson("registry/server.json");
-const readme = readFileSync(join(root, "README.md"), "utf8");
+const readme = readFileSync(join(root, "README.upstream.md"), "utf8");
 const failures = [];
 
 function expect(condition, message) {

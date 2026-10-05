@@ -7,11 +7,17 @@ This is **not** the product website LLM crawl file. That file is <https://premie
 
 Adapter stubs (`CLAUDE.md`, `GEMINI.md`, `CONVENTIONS.md`, `.github/copilot-instructions.md`, `.cursor/rules/`, `.windsurf/rules/`, `.clinerules`, `.continue/rules/`, `.junie/guidelines.md`) point here. Keep those stubs thin; put durable guidance in this file or in a focused Cursor/Copilot path rule. Optional Cursor rule `.cursor/rules/jev-surfaces.mdc` scores CEP / UXP / claims file candidates. It is not a TypeSafe Jev sidecar protocol; do not add one here.
 
+## Independent continuation
+
+This repository is OsirisMedici/Osiris-Premiere-MCP. Read `docs/osiris-continuation.md` before planning features, changing editing/recovery behavior, merging upstream, or preparing a release; it defines the intended outcome, known host defects, and publication boundaries. Read `CREDITS.md` when changing attribution or licensing.
+
+The root package is private and GitHub Actions are disabled. Existing package/bridge identifiers and registry/release metadata describe the upstream base. Keep publications under owned identities after a deliberate migration. `README.upstream.md` anchors inherited published-version pins; `README.md` describes this continuation. The remaining technical guidance below is inherited and applies subject to these continuation boundaries.
+
 ## What this repository is
 
 Independent TypeScript [MCP](https://modelcontextprotocol.io) server that gives a compatible AI client structured control over supported **Adobe Premiere Pro** workflows. Display name: MCP for Adobe Premiere Pro. npm package: `premiere-pro-mcp`. MCP server name: `io.github.leancoderkavy/premiere-pro`.
 
-It is not affiliated with Adobe. The only npm package published from this repo is `premiere-pro-mcp`.
+It is not affiliated with Adobe. The upstream npm package is `premiere-pro-mcp`; this continuation has no independent npm release.
 
 Production path: local Node.js MCP server (stdio) talking to a **CEP** panel inside Premiere through private file-based IPC (`.jsx` command files and `.json` responses). **UXP** is a capability-aware preview backend for Premiere 25.6+ documented APIs. A failed UXP mutation must never be silently retried through CEP or the undocumented QE DOM.
 
@@ -38,7 +44,7 @@ Read only what the task needs. Current source and release metadata beat dated sn
 | UXP 26.3 coverage | `docs/adobe-uxp-26.3-coverage.md` |
 | Claude Code develop skill | `claude-plugins/premiere-pro/skills/develop-premiere-pro-mcp/SKILL.md` |
 
-Do not mix published-package counts with development-source counts. `docs/supported-actions.md` is the source catalog; the published npm artifact is what the website reports. In this repo the README `### Latest release:` heading anchors client version pins. A listed tool is not proof that a particular Premiere host supports it.
+Do not mix published-package counts with development-source counts. `docs/supported-actions.md` is the source catalog; the published npm artifact is what the website reports. The preserved `README.upstream.md` `### Latest release:` heading anchors inherited client version pins. A listed tool is not proof that a particular Premiere host supports it.
 
 ## Architecture
 

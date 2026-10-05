@@ -44,10 +44,10 @@ describe("coding-agent instruction stubs", () => {
     for (const path of [
       "plugins/premiere-pro/skills/edit-premiere-project/SKILL.md",
       "claude-plugins/premiere-pro/skills/edit-premiere-project/SKILL.md",
-      "README.md",
+      "README.upstream.md",
     ]) {
       expect(read(path), path).toContain(pin);
     }
-    expect(read("README.md")).toContain(`premiere-pro-mcp@${version}`);
+    expect(read("README.upstream.md")).toContain(`premiere-pro-mcp@${version}`);
   });
 });

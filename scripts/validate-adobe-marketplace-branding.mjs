@@ -37,7 +37,7 @@ const surfaces = [
   },
   {
     file: "README.md",
-    required: [`# ${displayName}`],
+    required: ["# Osiris Premiere MCP"],
   },
 ];
 

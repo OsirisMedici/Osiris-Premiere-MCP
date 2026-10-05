@@ -7,7 +7,7 @@ const read = (path: string) => readFileSync(join(root, path), "utf8");
 
 describe("Claude Fable 5.1 support guidance", () => {
   const doc = read("docs/claude-fable-5-1.md");
-  const readme = read("README.md");
+  const readme = read("README.upstream.md");
 
   it("keeps the repository doc linked from the README client section", () => {
     expect(readme).toContain("### Claude Fable 5.1");

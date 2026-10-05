@@ -251,7 +251,7 @@ describe("detect_silence distribution prerequisites", () => {
   });
 
   it("documents the local ffmpeg prerequisite", () => {
-    const readme = readFileSync(join(process.cwd(), "README.md"), "utf8");
+    const readme = readFileSync(join(process.cwd(), "README.upstream.md"), "utf8");
     expect(readme).toContain("`detect_silence`");
     expect(readme).toContain("winget install Gyan.FFmpeg");
     expect(readme).toContain("brew install ffmpeg");

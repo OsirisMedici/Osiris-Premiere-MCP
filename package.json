@@ -162,11 +162,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leancoderkavy/premiere-pro-mcp.git"
+    "url": "git+https://github.com/OsirisMedici/Osiris-Premiere-MCP.git"
   },
   "homepage": "https://premiere-pro-mcp.com/",
   "bugs": {
-    "url": "https://github.com/leancoderkavy/premiere-pro-mcp/issues"
+    "url": "https://github.com/OsirisMedici/Osiris-Premiere-MCP/issues"
   },
   "funding": {
     "type": "buymeacoffee",
@@ -249,5 +249,12 @@
     "ip-address": "^10.4.0",
     "nanoid": "3.3.18",
     "js-yaml": "^4.3.2"
-  }
+  },
+  "private": true,
+  "contributors": [
+    {
+      "name": "Osiris Medici",
+      "url": "https://github.com/OsirisMedici"
+    }
+  ]
 }

@@ -38,7 +38,7 @@ describe("CEP installation metadata", () => {
   });
 
   it("documents the Windows unsigned-extension value as REG_SZ", () => {
-    const readme = readFileSync(join(root, "README.md"), "utf8");
+    const readme = readFileSync(join(root, "README.upstream.md"), "utf8");
     const installer = readFileSync(join(root, "scripts", "install-cep.ps1"), "utf8");
 
     expect(readme).toContain("String (`REG_SZ`)");

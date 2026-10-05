@@ -5,7 +5,7 @@ import { describe, expect, it } from "vitest";
 const read = (path: string) => readFileSync(join(process.cwd(), path), "utf8");
 
 describe("GPT-6 Sol/Luna and Claude Opus 5.5 guidance", () => {
-  const readme = read("README.md");
+  const readme = read("README.upstream.md");
 
   it("links both model docs from the README client section", () => {
     expect(readme).toContain("### GPT-6 Sol and GPT-6 Luna");

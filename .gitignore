@@ -46,3 +46,13 @@ npm-debug.log*
 # Local browser verification artifacts
 .playwright-cli/
 output/playwright/
+
+# Private local editing and acceptance artifacts
+work/
+outputs/
+*.prproj
+*.mov
+*.MOV
+*.mp4
+*.wav
+*.mp3

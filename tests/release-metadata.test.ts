@@ -52,7 +52,7 @@ describe("canonical release metadata", () => {
   });
 
   it("aligns README release and capability claims", () => {
-    const readme = read("README.md");
+    const readme = read("README.upstream.md");
     const supportedActions = read("docs/supported-actions.md");
     const publishedVersion = readPublishedVersion();
 
